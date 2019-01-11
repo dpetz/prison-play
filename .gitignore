@@ -1,11 +1,5 @@
-# https://stackoverflow.com/questions/24297331/whats-recommended-gitignore-for-scala-sbt-project-in-intellij-idea
-#target
-#*.class
-#*.iml
-#*.ipr
-#*.iws
-#.idea
-#out
+
+
 
 .DS_Store
 
