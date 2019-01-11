@@ -1,22 +1,22 @@
-import org.scalatestplus.play._
-import org.scalatestplus.play.guice.GuiceOneServerPerTest
+import org.junit.runner._
+import org.specs2.mutable._
+import org.specs2.runner._
+import play.api.test._
 
 /**
- * Runs a browser test using Fluentium against a play application on a server port.
+ * add your integration spec here.
+ * An integration test will fire up a whole play application in a real (or headless) browser
  */
-class BrowserSpec extends PlaySpec
-  with OneBrowserPerTest
-  with GuiceOneServerPerTest
-  with HtmlUnitFactory
-  with ServerProvider {
+@RunWith(classOf[JUnitRunner])
+class BrowserSpec extends Specification {
 
   "Application" should {
 
-    "work from within a browser" in {
+    "work from within a browser" in new WithBrowser {
 
-      go to ("http://localhost:" + port)
+      browser.goTo("http://localhost:" + port)
 
-      pageSource must include ("Your new application is ready.")
+      browser.pageSource must contain("Add Person")
     }
   }
 }
