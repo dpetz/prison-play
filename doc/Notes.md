@@ -26,7 +26,7 @@
 
 * Bootstrapping [prison-play] GitHub project from the [Play Scala Starter Example]
 * Configure `~Run` sbt task to benefit from Play auto-updates that sets Play apart from most Web frameworks
-* [Welcome to Play.html](./Welcome to Play.htm) served to <http://localhost:9000> introduces `conf/routes`,
+* [Welcome to Play.html](/doc/Welcome to Play.htm) served to <http://localhost:9000> introduces `conf/routes`,
 Play's template language [Twirl] and it's [dependency injection] via [Guice].
 * Use [this][2] `.gitignore`. Add `.DS_Store`  on Mac. Reset repo via `git rm -r -q --cached .`
 * Migrating this notes from Evernote to [Markdown].
